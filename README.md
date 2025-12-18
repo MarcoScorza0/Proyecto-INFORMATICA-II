@@ -1,5 +1,12 @@
 Proyecto de control ON/OFF de sistema de aire acondicionado con medidas de protección frente a posibles daños en el equipo.  
 
+
+MAQUINA DE ESTADO:
+
+<img width="1258" height="761" alt="image" src="https://github.com/user-attachments/assets/129d7fcd-cd4d-4871-a244-42f151603831" />
+
+
+
 El concepto está basado en un sistema de aire acondicionado tipo SPLIT. Se medirá la temperatura ambiente, y en función de dicha temperatura se pondrán en funcionamiento el compresor así como los forzadores.  
 CICLO DE FUNCIONAMIENTO (SIN ERRORES DETECTADOS): 
 
@@ -10,6 +17,8 @@ El sistema arrancará en estado "ESPERA". En dicho estado, el forzador de la uni
 
  
  Una vez se alcanza la temperatura deseada, el compresor se apagará. Aún con el compresor apagado, los forzadores seguirán encendidos. Esto a fin de mantener el intercambio de temperatura aún con el compresor apagado, puesto que por un momento el evaporador sigue a bajas temperaturas, asi como el condensador a altas. Luego de detectarse una temperatura en el evaporador mayor a 10ºC, el equipo entra en estado de ESPERA nuevamente. 
+
+
 
   * POSIBLES DETECCIONES DE ERRORES:
 

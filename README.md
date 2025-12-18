@@ -6,6 +6,9 @@ MAQUINA DE ESTADO:
 <img width="1258" height="761" alt="image" src="https://github.com/user-attachments/assets/129d7fcd-cd4d-4871-a244-42f151603831" />
 
 
+VIDEO EXPLICATIVO:
+
+https://youtu.be/1aOpvQ9mUVc
 
 El concepto está basado en un sistema de aire acondicionado tipo SPLIT. Se medirá la temperatura ambiente, y en función de dicha temperatura se pondrán en funcionamiento el compresor así como los forzadores.  
 CICLO DE FUNCIONAMIENTO (SIN ERRORES DETECTADOS): 

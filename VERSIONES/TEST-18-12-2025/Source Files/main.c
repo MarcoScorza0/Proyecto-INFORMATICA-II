@@ -4,18 +4,12 @@
 
  /*
       RESET -> botón de reset.    Pin D0
-      SW1_TEST -> switch provisorio para testeo de proyecto. Pin D1
-      SW2_TEST -> switch provisorio para testeo de proyecto Pin D2
-      SW3_TEST -> switch provisorio para testeo de proyecto Pin D3
-      
-      
-      
+     
       COMPRESOR -> salida de control de circuito de potencia del compresor.    Pin B4
       FOR_INT -> salida de control de circuito de potencia del forzador de la unidad interior.   Pin B5
       FOR_EXT -> salida de control de circuito de potencia del forzador de la unidad exterior.    Pin B6
       
-      LED_1 -> salida de led indicador de error.    Pin C0
-      LED_2 -> salida de led indicador de error. Pin C1
+     
       */
 
 int main(){
@@ -51,4 +45,5 @@ float T0 = TEMP_AMB_0;
 	 default:
 		  MICRO_DEFAULT();	 
       }
+
 }}

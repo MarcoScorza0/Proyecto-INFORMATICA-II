@@ -14,8 +14,8 @@
 
 int main(){
 int flag_estado = ESTADO_ESPERA;  
-float deltaT = DELTA_T;
-float T0 = TEMP_AMB_0;
+int deltaT = DELTA_T;
+int T0 = TEMP_AMB_0;
    init_mcu();
    while(1){     
       switch(flag_estado){

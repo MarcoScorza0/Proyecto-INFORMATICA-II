@@ -95,7 +95,7 @@
   //------------------------------------
 
 
-int estado_espera(float deltaT,float T0){
+int estado_espera(int deltaT,int T0){
   if (leer_ADC(SENSOR_TEMP_AMB) > (T0 + deltaT)){
      return ESTADO_COMPRESOR_Y_FORZADORES;
   } else {
@@ -106,7 +106,7 @@ int estado_espera(float deltaT,float T0){
 
 
 
-int estado_compresor_y_forzadores(float deltaT,float T0){
+int estado_compresor_y_forzadores(int deltaT,int T0){
    if (leer_ADC(SENSOR_TEMP_EVAP) < 50){
       MICRO_DEFROST();
       return ESTADO_DESCONGELAMIENTO;
@@ -122,7 +122,7 @@ return ESTADO_COMPRESOR_Y_FORZADORES;
 
 
 
-int estado_descongelamiento(float deltaT,float T0){
+int estado_descongelamiento(int deltaT,int T0){
    if(leer_ADC(SENSOR_TEMP_EVAP) > DESCONGELADO){
       return ESTADO_ERROR1;
 }else{
@@ -132,7 +132,7 @@ int estado_descongelamiento(float deltaT,float T0){
 };
 
 
-int estado_forzadores(float deltaT,float T0){
+int estado_forzadores(int deltaT,int T0){
    if(leer_ADC(PRESOSTATO_BAJA) < PRESION_ALERTA){
       return ESTADO_ERROR2;
    }
@@ -149,7 +149,7 @@ int estado_forzadores(float deltaT,float T0){
 }
 
 
-int estado_error1(float deltaT, float T0){
+int estado_error1(int deltaT, int T0){
 if(RESET == 0) {
    MICRO_ERROR_1();
    return ESTADO_ERROR1;
@@ -159,7 +159,7 @@ return ESTADO_ESPERA;
 };  
    }
    
-   int estado_error2(float deltaT, float T0){
+   int estado_error2(int deltaT, int T0){
 if(RESET == 0) {
    MICRO_ERROR_2();
    return ESTADO_ERROR2;
